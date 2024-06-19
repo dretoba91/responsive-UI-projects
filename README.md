@@ -1,16 +1,8 @@
 # reponsive_ui_projects
 
-A new Flutter project.
+Flutter Fully Responsive Design UI Projects
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Fort this repository to your local. To run each application, switch root file for each application in the main.dart file.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
