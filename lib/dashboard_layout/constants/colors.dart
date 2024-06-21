@@ -5,6 +5,7 @@ class AppColors {
 
   static const Color appBackgroundColor = Color(0xFFFCFCFC); // background color
   static const Color bgColor = Color(0xFFC4C4C4);
+  static const Color circularBgColor = Color(0xFFCCD8CD);
   static const Color searchBgColor = Color(0xFFF1F5F5);
 
   // buttons

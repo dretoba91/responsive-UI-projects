@@ -3,6 +3,7 @@ import 'package:reponsive_ui_projects/dashboard_layout/constants/colors.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/dashboard_container.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/dashboard_container1.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/drawer.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/welcome_container.dart';
 
 class MobileScreen extends StatelessWidget {
   const MobileScreen({super.key});
@@ -14,7 +15,7 @@ class MobileScreen extends StatelessWidget {
         backgroundColor: AppColors.appBackgroundColor,
         titleSpacing: 0.0,
         title: SizedBox(
-          width: 330,
+          width: 200,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -38,7 +39,7 @@ class MobileScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 200,
+                      width: 100,
                       height: 25,
                       color: AppColors.searchBgColor,
                       child: const TextField(
@@ -111,6 +112,7 @@ class MobileScreen extends StatelessWidget {
         child: DashboardContainer(
           color: AppColors.searchBgColor,
           child: SingleChildScrollView(
+            physics: AlwaysScrollableScrollPhysics(),
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: Column(
@@ -128,6 +130,15 @@ class MobileScreen extends StatelessWidget {
                     height: 10,
                   ),
                   DashboardContainer1(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  DashboardContainer1(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  DashboardContainer1(),                 
+                  
                 ],
               ),
             ),
