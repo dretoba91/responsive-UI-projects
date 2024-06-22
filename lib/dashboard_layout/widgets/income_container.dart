@@ -18,8 +18,8 @@ class IncomeContainer extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            width: 200,
+          Expanded(
+            child: Container(
             padding:
                 const EdgeInsets.only(left: 10, top: 2, right: 2, bottom: 10),
             decoration: BoxDecoration(
@@ -78,10 +78,14 @@ class IncomeContainer extends StatelessWidget {
                 )
               ],
             ),
+            ),
           ),
-          Container(
-            width: 200,
-            padding: const EdgeInsets.only(bottom: 10, top: 5),
+          // const SizedBox(
+          //   height: 16,
+          // ),
+          Expanded(
+            child: Container(
+              padding: const EdgeInsets.only(left: 20, bottom: 10, top: 5),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -129,9 +133,11 @@ class IncomeContainer extends StatelessWidget {
                 )
               ],
             ),
+            ),
           ),
         ],
       ),
     );
   }
 }
+
