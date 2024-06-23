@@ -3,6 +3,7 @@ import 'package:reponsive_ui_projects/dashboard_layout/constants/colors.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/dashboard_container.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/dashboard_container1.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/drawer.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/web_traffic.dart';
 
 class MobileScreen extends StatelessWidget {
   const MobileScreen({super.key});
@@ -98,7 +99,11 @@ class MobileScreen extends StatelessWidget {
                   DashboardContainer1(),
                   SizedBox(
                     height: 20,
-                  ),                
+                  ), 
+                  WebTraffic(),
+                  SizedBox(
+                    height: 20,
+                  ),              
                   
                 ],
               ),
