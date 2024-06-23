@@ -17,13 +17,13 @@ class TilesHeader extends StatelessWidget {
             Text(
               'Source',
               style: TextStyle(
-                fontSize: 12,
+                fontSize: 15,
                 fontWeight: FontWeight.w500,
                 color: AppColors.textGreyColor,
               ),
             ),
             SizedBox(
-              width: 120,
+              width: 130,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -31,7 +31,7 @@ class TilesHeader extends StatelessWidget {
                   Text(
                     'Sessions',
                     style: TextStyle(
-                      fontSize: 12,
+                      fontSize: 15,
                       fontWeight: FontWeight.w500,
                       color: AppColors.textGreyColor,
                     ),
@@ -42,7 +42,7 @@ class TilesHeader extends StatelessWidget {
                   Text(
                     'Change',
                     style: TextStyle(
-                      fontSize: 12,
+                      fontSize: 15,
                       fontWeight: FontWeight.w500,
                       color: AppColors.textGreyColor,
                     ),

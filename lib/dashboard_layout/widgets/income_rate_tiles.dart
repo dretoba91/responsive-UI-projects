@@ -28,13 +28,13 @@ class IncomeRateTiles extends StatelessWidget {
             Text(
               source,
               style: const TextStyle(
-                fontSize: 12,
+                fontSize: 13,
                 fontWeight: FontWeight.w600,
                 color: AppColors.text2Color,
               ),
             ),
             SizedBox(
-              width: 100,
+              width: 110,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -42,7 +42,7 @@ class IncomeRateTiles extends StatelessWidget {
                   Text(
                     '$sessions',
                     style: const TextStyle(
-                      fontSize: 12,
+                      fontSize: 13,
                       fontWeight: FontWeight.w500,
                       color: AppColors.text2Color,
                     ),
@@ -50,7 +50,7 @@ class IncomeRateTiles extends StatelessWidget {
                   Text(
                     change,
                     style: const TextStyle(
-                      fontSize: 12,
+                      fontSize: 13,
                       fontWeight: FontWeight.w500,
                       color: AppColors.text2Color,
                     ),

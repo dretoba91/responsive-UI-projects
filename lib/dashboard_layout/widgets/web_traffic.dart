@@ -22,7 +22,7 @@ class WebTraffic extends StatelessWidget {
           Text(
             "Title",
             style: TextStyle(
-              fontSize: 12,
+              fontSize: 19,
               fontWeight: FontWeight.w600,
               color: AppColors.textBlackColor,
             ),

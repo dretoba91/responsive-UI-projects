@@ -34,8 +34,8 @@ class _OverviewState extends State<Overview> {
           const Text(
             'Overview',
             style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w700,
+              fontSize: 25,
+              fontWeight: FontWeight.w600,
               color: AppColors.textBlackColor,
             ),
           ),
