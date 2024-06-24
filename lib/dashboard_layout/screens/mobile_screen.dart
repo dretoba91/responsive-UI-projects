@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/constants/colors.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/comment/comments_container.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/dashboard_container.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/overview/dashboard_container1.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/drawer.dart';
@@ -105,7 +106,11 @@ class MobileScreen extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-                  PopularProductsContainer()            
+                  PopularProductsContainer(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  CommentsContainer(),                           
                   
                 ],
               ),
