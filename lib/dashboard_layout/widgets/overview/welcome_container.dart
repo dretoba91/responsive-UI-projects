@@ -13,7 +13,7 @@ class WelcomeContainer extends StatelessWidget {
         Text(
           'Welcome to our ',
           style: TextStyle(
-            fontSize: 10,
+            fontSize: 13,
             fontWeight: FontWeight.w400,
             color: AppColors.textGreyColor,
           ),
@@ -21,7 +21,7 @@ class WelcomeContainer extends StatelessWidget {
         Text(
           'Online Experience',
           style: TextStyle(
-            fontSize: 10,
+            fontSize: 13,
             fontWeight: FontWeight.w400,
             color: AppColors.text2Color,
           ),

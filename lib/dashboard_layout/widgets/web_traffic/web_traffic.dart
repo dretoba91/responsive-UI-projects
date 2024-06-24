@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/constants/colors.dart';
-import 'package:reponsive_ui_projects/dashboard_layout/widgets/income_rate_tiles.dart';
-import 'package:reponsive_ui_projects/dashboard_layout/widgets/tiles_header.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/web_traffic/income_rate_tiles.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/web_traffic/tiles_header.dart';
 
 class WebTraffic extends StatelessWidget {
   const WebTraffic({super.key});

@@ -26,13 +26,14 @@ class UserAvatar extends StatelessWidget {
               child: Image.asset(
                 image,
                 height: size,
+                width: size,
               ),
             ),
           ),
           Text(
             name,
             style: const TextStyle(
-              fontSize: 10,
+              fontSize: 13,
               fontWeight: FontWeight.w400,
               color: AppColors.text2Color,
             ),

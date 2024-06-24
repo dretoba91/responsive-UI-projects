@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/constants/colors.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/dashboard_container.dart';
-import 'package:reponsive_ui_projects/dashboard_layout/widgets/dashboard_container1.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/overview/dashboard_container1.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/drawer.dart';
-import 'package:reponsive_ui_projects/dashboard_layout/widgets/popular_products_container.dart';
-import 'package:reponsive_ui_projects/dashboard_layout/widgets/web_traffic.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/popular_product/popular_products_container.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/web_traffic/web_traffic.dart';
 
 class MobileScreen extends StatelessWidget {
   const MobileScreen({super.key});

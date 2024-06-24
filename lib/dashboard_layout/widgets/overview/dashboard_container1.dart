@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/constants/colors.dart';
-import 'package:reponsive_ui_projects/dashboard_layout/widgets/income_container.dart';
-import 'package:reponsive_ui_projects/dashboard_layout/widgets/overview.dart';
-import 'package:reponsive_ui_projects/dashboard_layout/widgets/users_avatar_container.dart';
-import 'package:reponsive_ui_projects/dashboard_layout/widgets/welcome_container.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/overview/income_container.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/overview/overview.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/overview/users_avatar_container.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/overview/welcome_container.dart';
 
 class DashboardContainer1 extends StatelessWidget {
   const DashboardContainer1({super.key});

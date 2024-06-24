@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/constants/colors.dart';
-import 'package:reponsive_ui_projects/dashboard_layout/widgets/user_avatar.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/overview/user_avatar.dart';
 
 class UsersAvatarContainer extends StatelessWidget {
   const UsersAvatarContainer({super.key});
