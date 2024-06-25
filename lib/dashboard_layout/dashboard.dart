@@ -4,8 +4,8 @@ import 'package:reponsive_ui_projects/dashboard_layout/screens/desktop_screen.da
 import 'package:reponsive_ui_projects/dashboard_layout/screens/mobile_screen.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/screens/tablet_screen.dart';
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class Dashboard extends StatelessWidget {
+  const Dashboard({super.key});
 
   @override
   Widget build(BuildContext context) {
