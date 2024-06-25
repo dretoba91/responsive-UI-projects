@@ -511,8 +511,8 @@ class DesktopScreen extends StatelessWidget {
                               Expanded(
                                 flex: 2,
                                 child: Container(
-                                  padding: EdgeInsets.only(right: 10),
-                                  child: Column(
+                                  padding: const EdgeInsets.only(right: 10),
+                                  child: const Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
@@ -538,7 +538,7 @@ class DesktopScreen extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              Expanded(
+                              const Expanded(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
