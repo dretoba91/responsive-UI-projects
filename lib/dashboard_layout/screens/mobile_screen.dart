@@ -17,7 +17,7 @@ class MobileScreen extends StatelessWidget {
         backgroundColor: AppColors.appBackgroundColor,
         titleSpacing: 0.0,
         title: SizedBox(
-          width: 230,
+          // width: 250,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -28,31 +28,55 @@ class MobileScreen extends StatelessWidget {
                   size: 20,
                 ),
               ),
-              Container(
-                height: 28,
-                padding: const EdgeInsets.only(left: 8, right: 8),
-                decoration: BoxDecoration(
-                  color: AppColors.btnColor,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: InkWell(
-                  onTap: () {},
-                  child: const Center(
-                    child: Text(
-                      "Create",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
+              // Container(
+              //   height: 28,
+              //   padding: const EdgeInsets.only(left: 8, right: 8),
+              //   decoration: BoxDecoration(
+              //     color: AppColors.btnColor,
+              //     borderRadius: BorderRadius.circular(8),
+              //   ),
+              //   child: InkWell(
+              //     onTap: () {},
+              //     child: const Center(
+              //       child: Text(
+              //         "Create",
+              //         style: TextStyle(
+              //           color: Colors.white,
+              //           fontSize: 12,
+              //           fontWeight: FontWeight.bold,
+              //         ),
+              //       ),
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         ),
         actions: [
+          Container(
+            height: 28,
+            padding: const EdgeInsets.only(left: 8, right: 8),
+            decoration: BoxDecoration(
+              color: AppColors.btnColor,
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: InkWell(
+              onTap: () {},
+              child: const Center(
+                child: Text(
+                  "Create",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(
+            width: 20,
+          ),
           IconButton(
             onPressed: () {},
             icon: const Icon(
@@ -98,7 +122,9 @@ class MobileScreen extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  DashboardContainer1(),
+                  DashboardContainer1(
+                    isDesktop: false,
+                  ),
                   SizedBox(
                     height: 20,
                   ), 

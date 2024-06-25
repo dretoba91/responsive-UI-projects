@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/constants/colors.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/comment/comments_container.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/dashboard_container.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/overview/dashboard_container1.dart';
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/drawer.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/popular_product/popular_products_container.dart';
+import 'package:reponsive_ui_projects/dashboard_layout/widgets/web_traffic/web_traffic.dart';
 
 class TabletScreen extends StatelessWidget {
   const TabletScreen({super.key});
@@ -13,76 +16,77 @@ class TabletScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppColors.appBackgroundColor,
         titleSpacing: 0.0,
-        title: SizedBox(
-          width: 330,
+        title: Container(
+          width: double.infinity,
+          height: 30,
+          padding: const EdgeInsets.only(bottom: 15),
+          decoration: BoxDecoration(
+            color: AppColors.searchBgColor,
+            borderRadius: BorderRadius.circular(12),
+          ),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                width: 250,
-                height: 30,
-                padding: const EdgeInsets.only(bottom: 15),
-                decoration: BoxDecoration(
-                  color: AppColors.searchBgColor,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.search,
-                        size: 20,
-                      ),
-                    ),
-                    Container(
-                      width: 200,
-                      height: 25,
-                      color: AppColors.searchBgColor,
-                      child: const TextField(
-                        decoration: InputDecoration(
-                            hintText: 'Search or type a command',
-                            hintStyle: TextStyle(
-                              fontSize: 10,
-                              fontFamily: 'Lato',
-                              fontWeight: FontWeight.normal,
-                              color: AppColors.textGreyColor,
-                            ),
-                            border: InputBorder.none,
-                            enabledBorder: InputBorder.none,
-                            focusedBorder: InputBorder.none,
-                            contentPadding:
-                                EdgeInsets.only(left: 20, bottom: 12)),
-                      ),
-                    ),
-                  ],
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.search,
+                  size: 20,
                 ),
               ),
-              Container(
-                height: 28,
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: AppColors.btnColor,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: InkWell(
-                  onTap: () {},
-                  child: const Text(
-                    "Create",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                    ),
+              Expanded(
+                child: Container(
+                  // width: 550,
+                  height: 25,
+                  color: AppColors.searchBgColor,
+                  child: const TextField(
+                    decoration: InputDecoration(
+                        hintText: 'Search or type a command',
+                        hintStyle: TextStyle(
+                          fontSize: 10,
+                          fontFamily: 'Lato',
+                          fontWeight: FontWeight.normal,
+                          color: AppColors.textGreyColor,
+                        ),
+                        border: InputBorder.none,
+                        enabledBorder: InputBorder.none,
+                        focusedBorder: InputBorder.none,
+                        contentPadding: EdgeInsets.only(left: 20, bottom: 12)),
                   ),
                 ),
               ),
+            
             ],
           ),
         ),
         actions: [
+          const SizedBox(
+            width: 200,
+          ),
+          Container(
+            height: 30,
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: AppColors.btnColor,
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: InkWell(
+              onTap: () {},
+              child: const Text(
+                "Create",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                ),
+                softWrap: true,
+              ),
+            ),
+          ),
+          const SizedBox(
+            width: 30,
+          ),
           IconButton(
             onPressed: () {},
             icon: const Icon(
@@ -90,7 +94,7 @@ class TabletScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            width: 20,
+            width: 30,
           ),
           CircleAvatar(
             child: Image.asset(
@@ -98,7 +102,7 @@ class TabletScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            width: 10,
+            width: 40,
           ),
         ],
       ),
@@ -113,30 +117,56 @@ class TabletScreen extends StatelessWidget {
           child: SingleChildScrollView(
             physics: AlwaysScrollableScrollPhysics(),
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+              padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'Dashboard',
-                    style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
+                  Expanded(
+                    flex: 2,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Dashboard',
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        DashboardContainer1(
+                          isDesktop: false,
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        WebTraffic(),
+                      ],
                     ),
                   ),
                   SizedBox(
-                    height: 10,
+                    width: 10,
                   ),
-                  DashboardContainer1(),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  DashboardContainer1(),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  DashboardContainer1(),
+                  Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          height: 52,
+                        ),
+                        PopularProductsContainer(),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        CommentsContainer(),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),

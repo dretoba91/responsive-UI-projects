@@ -6,7 +6,8 @@ import 'package:reponsive_ui_projects/dashboard_layout/widgets/overview/users_av
 import 'package:reponsive_ui_projects/dashboard_layout/widgets/overview/welcome_container.dart';
 
 class DashboardContainer1 extends StatelessWidget {
-  const DashboardContainer1({super.key});
+  final bool isDesktop;
+  const DashboardContainer1({super.key, required this.isDesktop});
 
   @override
   Widget build(BuildContext context) {
@@ -17,21 +18,23 @@ class DashboardContainer1 extends StatelessWidget {
         color: AppColors.appBackgroundColor,
         borderRadius: BorderRadius.circular(8),
       ),
-      child: const Column(
+      child: Column(
         children: [
-          Overview(),
-          SizedBox(
+          const Overview(),
+          const SizedBox(
             height: 20,
           ),
-          IncomeContainer(),
-          SizedBox(
+          const IncomeContainer(),
+          const SizedBox(
             height: 20,
           ),
-          WelcomeContainer(),
-          SizedBox(
+          const WelcomeContainer(),
+          const SizedBox(
             height: 20,
           ),
-          UsersAvatarContainer(),
+          UsersAvatarContainer(
+            isDesktop: isDesktop,
+          ),
         ],
       ),
     );

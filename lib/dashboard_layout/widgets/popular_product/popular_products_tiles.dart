@@ -41,15 +41,21 @@ class PopularProductsTiles extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     color: AppColors.textGreyColor,
                   ),
+                  softWrap: true,
+                  overflow: TextOverflow.clip,
                 ),
               ],
             ),
-            Text(
-              '$earning\$',
-              style: const TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.w500,
-                color: AppColors.textGreyColor,
+            Flexible(
+              child: Text(
+                '$earning\$',
+                style: const TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w500,
+                  color: AppColors.textGreyColor,
+                ),
+                softWrap: true,
+                overflow: TextOverflow.clip,
               ),
             ),
           ],

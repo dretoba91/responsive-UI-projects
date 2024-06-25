@@ -65,45 +65,39 @@ class PopularProductsContainer extends StatelessWidget {
                   earning: '143',
                   hasDivider: false,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(10),
-                      width: 200,
-                      decoration: BoxDecoration(
-                        color: AppColors.appBackgroundColor,
-                        borderRadius: BorderRadius.circular(12),
-                        border: Border.all(
-                          color: AppColors.searchBgColor,
-                          style: BorderStyle.solid,
-                          width: 4.0,
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 2.0,
-                            blurRadius: 2.0,
-                            offset: const Offset(
-                              0,
-                              3,
-                            ), // changes position of shadow
-                          ),
-                        ],
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  width: 200,
+                  decoration: BoxDecoration(
+                    color: AppColors.appBackgroundColor,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: AppColors.searchBgColor,
+                      style: BorderStyle.solid,
+                      width: 4.0,
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2.0,
+                        blurRadius: 2.0,
+                        offset: const Offset(
+                          0,
+                          3,
+                        ), // changes position of shadow
                       ),
-                      child: const Center(
-                        child: Text(
-                          'All Product',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.textGreyColor,
-                          ),
-                        ),
+                    ],
+                  ),
+                  child: const Center(
+                    child: Text(
+                      'All Product',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.textGreyColor,
                       ),
                     ),
-                  ],
+                  ),
                 )
               ],
             ),

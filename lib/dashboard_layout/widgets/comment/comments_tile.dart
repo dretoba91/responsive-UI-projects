@@ -16,12 +16,16 @@ class CommentsTile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
-            comment,
-            style: const TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w500,
-              color: AppColors.text2Color,
+          Expanded(
+            child: Text(
+              comment,
+              style: const TextStyle(
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+                color: AppColors.text2Color,
+              ),
+              softWrap: true,
+              overflow: TextOverflow.clip,
             ),
           ),
           Text(
