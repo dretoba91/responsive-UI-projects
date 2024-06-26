@@ -10,10 +10,12 @@ class MusicPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: ResponsiveWidget(
-        mobile: Mobile(),
-        tablet: Tablet(),
-        desktop: Desktop(),
+      body: SafeArea(
+        child: ResponsiveWidget(
+          mobile: Mobile(),
+          tablet: Tablet(),
+          desktop: Desktop(),
+        ),
       ),
     );
   }
