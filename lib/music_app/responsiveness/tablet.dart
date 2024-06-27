@@ -20,7 +20,9 @@ class Tablet extends StatelessWidget {
         elevation: 0,
         width: 180,
         backgroundColor: AppColors.appBackgroundColor,
-        child: MusicDrawerContainer(),
+        child: MusicDrawerContainer(
+          isTablet: true,
+        ),
       ),
       body: Container(
         width: double.infinity,

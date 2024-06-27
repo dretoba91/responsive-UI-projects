@@ -22,7 +22,7 @@ class TrackListsContainer extends StatelessWidget {
                 Text(
                   'Track list',
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 28,
                     fontWeight: FontWeight.w700,
                     color: AppColors.textBlackGrey,
                   ),

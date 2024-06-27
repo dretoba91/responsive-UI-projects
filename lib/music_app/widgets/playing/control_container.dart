@@ -58,7 +58,7 @@ class ControlContainer extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const SizedBox(
-              width: 40,
+              width: 70,
             ),
             const Icon(
               Icons.volume_down,
@@ -83,7 +83,7 @@ class ControlContainer extends StatelessWidget {
               color: AppColors.textGrey1,
             ),
             const SizedBox(
-              width: 40,
+              width: 70,
             ),
           ],
         )

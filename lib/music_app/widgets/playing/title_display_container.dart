@@ -55,21 +55,22 @@ class TitleDisplayContainer extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: 20,
+            Container(
+              // width: 340,
+              padding: const EdgeInsets.symmetric(
+                horizontal: 50,
                 vertical: 5,
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
                     '2:14',
                   ),
-                  SizedBox(
-                    width: 200,
-                  ),
+                  // SizedBox(
+                  //   width: 200,
+                  // ),
                   Text(
                     '-1:14',
                   ),
@@ -77,7 +78,10 @@ class TitleDisplayContainer extends StatelessWidget {
               ),
             ),
             Container(
-              width: 340,
+              // width: 340,
+              padding: EdgeInsets.symmetric(
+                horizontal: 40,
+              ),
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(12)),
               child: LinearPercentIndicator(
