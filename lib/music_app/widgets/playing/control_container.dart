@@ -47,7 +47,7 @@ class ControlContainer extends StatelessWidget {
               Icons.repeat,
               size: 30,
               color: AppColors.textGrey1,
-            )
+            ),
           ],
         ),
         const SizedBox(
@@ -65,14 +65,16 @@ class ControlContainer extends StatelessWidget {
               size: 20,
               color: AppColors.textGrey1,
             ),
-            Container(
-              width: 280,
-              decoration:
-                  BoxDecoration(borderRadius: BorderRadius.circular(12)),
-              child: LinearPercentIndicator(
-                lineHeight: 5,
-                percent: 0.6,
-                progressColor: AppColors.greenColor,
+            Expanded(
+              child: Container(
+                // width: ,
+                decoration:
+                    BoxDecoration(borderRadius: BorderRadius.circular(12)),
+                child: LinearPercentIndicator(
+                  lineHeight: 5,
+                  percent: 0.6,
+                  progressColor: AppColors.greenColor,
+                ),
               ),
             ),
             const Icon(
