@@ -7,6 +7,7 @@ class TrackTile extends StatelessWidget {
   final String artist;
   final String duration;
   final String year;
+  final bool shouldHaveOutline;
   const TrackTile({
     super.key,
     required this.image,
@@ -14,6 +15,7 @@ class TrackTile extends StatelessWidget {
     required this.artist,
     required this.duration,
     required this.year,
+    required this.shouldHaveOutline,
   });
 
   @override
@@ -35,12 +37,18 @@ class TrackTile extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset(
+                shouldHaveOutline
+                    ? Image.asset(
                   'assets/music/Outline.png',
                   // width: 40,
-                ),
-                const SizedBox(
+                      )
+                    : Container(),
+                shouldHaveOutline
+                    ? const SizedBox(
                   width: 5,
+                      )
+                    : const SizedBox(
+                        // width: 5,
                 ),
                 Image.asset(
                   image,

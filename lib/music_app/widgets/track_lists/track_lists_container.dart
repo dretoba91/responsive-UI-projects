@@ -84,6 +84,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '3:14',
                           artist: '\$ucideBoys',
                           year: '2016',
+                          shouldHaveOutline: true,
                         ),
                         TrackTile(
                           image: 'assets/music/image 16.png',
@@ -91,6 +92,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '2:54',
                           artist: 'Lebannon Hover',
                           year: '2009',
+                          shouldHaveOutline: true,
                         ),
                         TrackTile(
                           image: 'assets/music/image 18.png',
@@ -98,6 +100,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '4:19',
                           artist: 'Sydney Valette',
                           year: '2018',
+                          shouldHaveOutline: true,
                         ),
                         TrackTile(
                           image: 'assets/music/image 13.png',
@@ -105,6 +108,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '4:24',
                           artist: 'Travis Scott',
                           year: '2018',
+                          shouldHaveOutline: true,
                         ),
                         TrackTile(
                           image: 'assets/music/image 8.png',
@@ -112,6 +116,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '3:55',
                           artist: 'Nirvana',
                           year: '1993',
+                          shouldHaveOutline: true,
                         ),
                         TrackTile(
                           image: 'assets/music/image 6.png',
@@ -119,6 +124,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '4:15',
                           artist: '\$ucideBoys',
                           year: '2018',
+                          shouldHaveOutline: true,
                         ),
                         TrackTile(
                           image: 'assets/music/image 15.png',
@@ -126,6 +132,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '6:10',
                           artist: 'Crystal Castle',
                           year: '2018',
+                          shouldHaveOutline: true,
                         ),
                         TrackTile(
                           image: 'assets/music/topchart1.png',
@@ -133,6 +140,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '3:48',
                           artist: 'RadioHead',
                           year: '1997',
+                          shouldHaveOutline: true,
                         ),
                         TrackTile(
                           image: 'assets/music/image 19.png',
@@ -140,6 +148,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '3:24',
                           artist: 'Sydney Valette',
                           year: '2016',
+                          shouldHaveOutline: true,
                         ),
                         TrackTile(
                           image: 'assets/music/image 14.png',
@@ -147,6 +156,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '7:02',
                           artist: 'Burzum',
                           year: '1996',
+                          shouldHaveOutline: true,
                         ),
                         TrackTile(
                           image: 'assets/music/image 17.png',
@@ -154,6 +164,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '3:41',
                           artist: 'Crystal Castle',
                           year: '1996',
+                          shouldHaveOutline: true,
                         ),
                         TrackTile(
                           image: 'assets/music/image 21.png',
@@ -161,6 +172,7 @@ class TrackListsContainer extends StatelessWidget {
                           duration: '4:35',
                           artist: 'A\$AP ROCKY',
                           year: '2018',
+                          shouldHaveOutline: true,
                         ),
                       ],
                     ),
